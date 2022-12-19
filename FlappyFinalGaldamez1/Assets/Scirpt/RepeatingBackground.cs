@@ -10,14 +10,14 @@ public class RepeatingBackground : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        groundCollider = GetComponent<BoxColliider2D>();
+        groundCollider = GetComponent<BoxCollider2D>();
         groundHorizontalLength = groundCollider.size.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform,position.x < -groundHorizontalLength)
+       if (transform.position.x <  -groundHorizontalLength)
         {
             RepositionBackground ();
         }
